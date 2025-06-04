@@ -1,0 +1,59 @@
+.recursos {
+  background: #ffe4cc;
+  padding: 3.5rem 0 3rem 0;
+  text-align: center;
+}
+
+.recursos h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.recursos h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f5b16e;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 3px;
+}
+
+.recursos-desc {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.recursos-cols {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 1.7rem;
+  flex-wrap: wrap;
+}
+
+.recursos-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 270px;
+}
+
+.recursos-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+}
+
+.icon-recursos {
+  width: 100px;
+  height: 100px;
+  /* background: url('/caminho/para/imagem-pessoa-celular.svg') center/contain no-repeat; */
+}

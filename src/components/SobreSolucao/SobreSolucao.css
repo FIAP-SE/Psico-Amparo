@@ -1,0 +1,60 @@
+.sobre-solucao {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+  background: #fff;
+}
+
+.sobre-solucao h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.sobre-solucao h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f5b16e;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 3px;
+}
+
+.solucao-cols {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.solucao-item {
+  flex: 1 1 220px;
+  max-width: 270px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #fff0;
+  margin-bottom: 1rem;
+}
+/* .icon1 { background: url('/caminho/para/icone1.svg') center/contain no-repeat; }
+.icon2 { background: url('/caminho/para/icone2.svg') center/contain no-repeat; }
+.icon3 { background: url('/caminho/para/icone3.svg') center/contain no-repeat; } */
+
+.solucao-item h3 {
+  font-size: 1.08rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+}
+
+.solucao-item p {
+  font-size: 1rem;
+  color: #333;
+}

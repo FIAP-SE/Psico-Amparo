@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe4cc;
+  padding: 1.2rem 2.5rem;
+  border-bottom: 1px solid #ffe4cc;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
