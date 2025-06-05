@@ -1,9 +1,18 @@
-import React from "react";
 import "./style.css";
-import logo from "../../assets/logo_header.png"; // ajuste o caminho se necessário
-
+import logo from "../../assets/logo_header.png";
+import React, { useState } from "react";
+import ConsultaConfirmada from "../../components/Confirmacao/Confirmacao"; 
 
 export default function Agendamento() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  function handleConfirmar() {
+    setModalOpen(true);
+  }
+  function handleCloseModal() {
+    setModalOpen(false);
+  }
+
   return (
     <div className="agendamento-bg">
       <header className="agendamento-header">
@@ -32,7 +41,8 @@ export default function Agendamento() {
               <label htmlFor="horario">Horários:</label>
               <input id="horario" type="text" />
               <span className="agendamento-user-circle small">B</span>
-              <button className="agendamento-btn">Marcar Consulta</button>
+              <button className="agendamento-btn" onClick={handleConfirmar}>Marcar Consulta</button>
+              {modalOpen && <ConsultaConfirmada onClose={handleCloseModal} />}
             </div>
           </div>
         </div>
@@ -46,7 +56,8 @@ export default function Agendamento() {
               <label htmlFor="horario2">Horários:</label>
               <input id="horario2" type="text" />
               <span className="agendamento-user-circle small">B</span>
-              <button className="agendamento-btn">Marcar Consulta</button>
+              <button className="agendamento-btn" onClick={handleConfirmar}>Marcar Consulta</button>
+              {modalOpen && <ConsultaConfirmada onClose={handleCloseModal} />}
             </div>
           </div>
         </div>

@@ -1,0 +1,106 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(20,20,20,0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-card {
+  background: #fff;
+  border-radius: 2.3rem;
+  max-width: 650px;
+  width: 90vw;
+  box-shadow: 0 4px 32px 0 rgba(30,30,60,.13);
+  position: relative;
+  padding: 2.4rem 2.2rem;
+  animation: fadeInModal 0.25s;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.98);}
+  to   { opacity: 1; transform: scale(1);}
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px; right: 24px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #222;
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.18s;
+}
+
+.modal-close:hover {
+  color: #cc2424;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.modal-img {
+  width: 160px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.modal-info {
+  flex: 1;
+  text-align: left;
+}
+
+.modal-info h2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modal-p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.modal-link {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.modal-link a {
+  color: #0987be;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.modal-details {
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  color: #222;
+}
+
+@media (max-width: 650px) {
+  .modal-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .modal-img {
+    margin: 0;
+  }
+  .modal-info {
+    text-align: center;
+  }
+}
