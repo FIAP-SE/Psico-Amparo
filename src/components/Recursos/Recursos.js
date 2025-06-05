@@ -1,6 +1,6 @@
 import React from "react";
 import "./Recursos.css";
-// imagem central
+import imagemPessoaCelular from "../../assets/icone_celular.png";
 
 export default function Recursos() {
   return (
@@ -19,7 +19,7 @@ export default function Recursos() {
           </div>
         </div>
         <div className="recursos-img">
-          {/* <img src={imagemPessoaCelular} alt="" /> */}
+          <img src={imagemPessoaCelular} alt="celular" />
           <div className="icon-recursos" />
         </div>
         <div className="recursos-group">
