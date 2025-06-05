@@ -1,0 +1,235 @@
+.agendamento-bg {
+  background: #f4f4f4;
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.agendamento-header {
+  background: #ffe4cc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+}
+
+.agendamento-logo {
+  height: 85px;
+  width: auto;
+}
+
+.agendamento-links {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.agendamento-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+.agendamento-main {
+  background: #ffeede;
+  min-height: calc(100vh - 150px);
+  padding: 2rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agendamento-main h1 {
+  margin-top: 1.2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.agendamento-search {
+  margin: 2rem 0 2.5rem 0;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 2rem;
+  width: 600px;
+  max-width: 90vw;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.agendamento-search input {
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  padding: 1.2rem 1rem 1.2rem 1.5rem;
+  background: transparent;
+  flex: 1;
+  border-radius: 2rem;
+}
+
+.agendamento-user-circle {
+  background: #ffd439;
+  color: #222;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.18rem;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.16);
+  margin-right: 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.agendamento-user-circle.small {
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  margin-left: 0.4rem;
+  margin-right: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0.4rem;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.16);
+}
+
+.agendamento-search-btn {
+  background: none;
+  border: none;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.agendamento-label {
+  align-self: flex-start;
+  margin-left: 8.2vw;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  color: #222;
+}
+
+.agendamento-card {
+  background: #fff;
+  border-radius: 2.7rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  padding: 2.6rem 2.6rem 2.6rem 2rem;
+  margin-bottom: 2.1rem;
+  max-width: 820px;
+  width: 85vw;
+}
+
+.agendamento-avatar {
+  width: 150px;
+  height: 150px;
+  background: #d3d3d3;
+  border-radius: 50%;
+  margin-right: 2.3rem;
+}
+
+.agendamento-card-info {
+  flex: 1;
+}
+
+.agendamento-card-title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
+
+.agendamento-card-sub {
+  margin-top: 0.1rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.agendamento-card-horario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.agendamento-card-horario label {
+  font-size: 1.07rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.agendamento-card-horario input {
+  border: 2px solid #bbb;
+  border-radius: 0.5rem;
+  font-size: 1.04rem;
+  padding: 0.22rem 0.8rem;
+  outline: none;
+  margin-right: 1.2rem;
+  width: 160px;
+}
+
+.agendamento-btn {
+  background: #5cddb4;
+  color: #222;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1.3rem;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+
+.agendamento-btn:hover {
+  background: #44b98e;
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .agendamento-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 1rem 1.2rem 1rem;
+  }
+  .agendamento-logo {
+    height: 60px;
+  }
+  .agendamento-main h1 {
+    font-size: 2rem;
+  }
+  .agendamento-search {
+    width: 98vw;
+    min-width: 0;
+  }
+  .agendamento-label {
+    margin-left: 1.2rem;
+  }
+  .agendamento-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 0.8rem 1.7rem 0.8rem;
+    min-width: 0;
+    width: 97vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .agendamento-avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .agendamento-card-title {
+    font-size: 1.13rem;
+  }
+  .agendamento-card-horario input {
+    width: 90px;
+  }
+}

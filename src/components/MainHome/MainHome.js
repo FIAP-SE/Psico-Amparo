@@ -1,8 +1,11 @@
 import React from 'react';
 import './style.css';
 import illustration from '../../assets/woman_homepage.png';
+import { useNavigate } from "react-router-dom";
 
 export default function MainHome() {
+  const navigate = useNavigate();
+
   return (
     <section className="main-home">
       <div className="main-home-content">
@@ -13,7 +16,7 @@ export default function MainHome() {
             Conectamos pessoas em sofrimento a profissionais capacitados, oferecendo escuta, cuidado e acolhimento quando mais se precisa.
           </p>
           <div className="buttons">
-            <button className="btn green">QUERO RECEBER ACOLHIMENTO</button>
+            <button className="btn green" onClick={() => navigate("/agendamento")}>QUERO RECEBER ACOLHIMENTO</button>
             <button className="btn blue">ÁREA DO PSICÓLOGO ASSOCIADO</button>
           </div>
         </div>
