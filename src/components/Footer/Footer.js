@@ -12,6 +12,7 @@ export default function Footer() {
           </div>
           <div className="footer-contact">
             <div>Contato:<br />contato@psicoamparo.com.br</div>
+            <br></br>
             <div>Telefone:<br />(11) 9999-5888</div>
           </div>
         </div>
@@ -20,11 +21,11 @@ export default function Footer() {
             Projeto para FIAP - Global Solution
           </div>
           <div className="footer-team">
-            André Luiz Viana Ribeiro rm553702<br />
-            Bárbara Blauh Schmitt rm554144<br />
-            Gustavo Henrique de Jesus rm555354<br />
-            Paulo Sergio Morais Gonçalves rm553012<br />
-            Silvaldo Stolarz de Lima rm552727
+            André Luiz Viana Ribeiro RM553702<br />
+            Bárbara Blauh Schmitt RM554144<br />
+            Gustavo Henrique de Jesus RM555354<br />
+            Paulo Sergio Morais Gonçalves RM553012<br />
+            Silvaldo Stolarz de Lima RM552727
           </div>
         </div>
       </div>
