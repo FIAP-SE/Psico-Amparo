@@ -17,7 +17,7 @@ export default function MainHome() {
           </p>
           <div className="buttons">
             <button className="btn green" onClick={() => navigate("/agendamento")}>QUERO RECEBER ACOLHIMENTO</button>
-            <button className="btn blue">ÁREA DO PSICÓLOGO ASSOCIADO</button>
+            <button className="btn blue" onClick={() => navigate("/psicologoassociado")}>ÁREA DO PSICÓLOGO ASSOCIADO</button>
           </div>
         </div>
         <img src={illustration} alt="Ilustração abraço" className="illustration" />

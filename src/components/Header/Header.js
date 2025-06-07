@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 import logo from '../../assets/logo_header.png';
 
@@ -9,8 +10,8 @@ export default function Header() {
         <img src={logo} alt="PsicoAmparo Logo" className="logo-img" />
       </div>
       <nav className="nav">
-        <a href="#" className="nav-link">LOGIN</a>
-        <a href="#" className="nav-link">ÁREA DO PSICÓLOGO</a>
+        <Link to="/loginpsicologo" className="nav-link">LOGIN</Link>
+        <Link to="/psicologoassociado" className="nav-link">ÁREA DO PSICÓLOGO</Link>
       </nav>
     </header>
   );

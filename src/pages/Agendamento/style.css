@@ -170,7 +170,7 @@
   padding: 0.22rem 0.8rem;
   outline: none;
   margin-right: 1.2rem;
-  width: 160px;
+  width: 180px;
 }
 
 .agendamento-btn {
@@ -232,4 +232,11 @@
   .agendamento-card-horario input {
     width: 90px;
   }
+}
+
+.agendamento-lupa-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  cursor: pointer;
 }

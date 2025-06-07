@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import iconCoracao from '../../assets/icon_coracao.png';
@@ -20,7 +21,7 @@ export default function LoginPsicologo() {
 
         <div className="links">
           <a href="#">Esqueci minha senha</a>
-          <a href="#">Ainda não sou cadastrado</a>
+          <Link to="/cadastropsicologo">Ainda não sou cadastrado</Link>
         </div>
 
         <div className="access-section">
