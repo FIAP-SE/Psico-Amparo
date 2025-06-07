@@ -1,6 +1,12 @@
 import React from 'react';
 import './style.css';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+
+import rafaelImg from '../../assets/perfis/rafael.png';
+import alessandraImg from '../../assets/perfis/alessadra.png';
+
+
 
 
 const PsicologoAssociado = () => {
@@ -25,8 +31,7 @@ const PsicologoAssociado = () => {
             <div className="agendamento-section">
             <h4>PRÓXIMO HORÁRIO</h4>
             <div className="agendamento-card">
-                <div className="foto-circulo"></div>
-                <div className="agendamento-info">
+                <img src={rafaelImg} alt="Foto Rafael" className="foto-circulo" />                <div className="agendamento-info">
                 <p><strong>RAFAEL SIQUEIRA VOSS</strong></p>
                 <p>Psicólogo CRP 05/26598</p>
                 <p>Dia 15/06 às 11:30</p>
@@ -39,7 +44,7 @@ const PsicologoAssociado = () => {
             <h4>HISTÓRICO</h4>
 
             <div className="agendamento-card">
-                <div className="foto-circulo"></div>
+            <img src={rafaelImg} alt="Foto Rafael" className="foto-circulo" />
                 <div className="agendamento-info">
                 <p><strong>RAFAEL SIQUEIRA VOSS</strong></p>
                 <p>Psicólogo CRP 05/26598</p>
@@ -48,8 +53,7 @@ const PsicologoAssociado = () => {
             </div>
 
             <div className="agendamento-card">
-                <div className="foto-circulo"></div>
-                <div className="agendamento-info">
+                <img src={alessandraImg} alt="Foto Alessandra" className="foto-circulo" />                <div className="agendamento-info">
                 <p><strong>ALESSANDRA MARINHO ALVES</strong></p>
                 <p>Psicólogo CRP 02/33856</p>
                 <p>Dia 31/04 às 8:50</p>
@@ -58,7 +62,10 @@ const PsicologoAssociado = () => {
             </div>
         </div>
         </div>
+        <Footer />
     </div>
+          
+
   );
 };
 
