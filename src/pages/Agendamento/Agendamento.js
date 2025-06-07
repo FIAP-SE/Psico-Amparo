@@ -1,6 +1,8 @@
 import "./style.css";
 import logo from "../../assets/logo_header.png";
-import lupa from "../../assets/lupa.png"; // ← Import da imagem
+import lupa from "../../assets/lupa.png";
+import rafaelImg from '../../assets/perfis/rafael.png';
+import alessandraImg from '../../assets/perfis/alessadra.png';
 import React, { useState } from "react";
 import ConsultaConfirmada from "../../components/Confirmacao/Confirmacao";
 
@@ -35,7 +37,7 @@ export default function Agendamento() {
 
         {/* CARD 1 */}
         <div className="agendamento-card">
-          <div className="agendamento-avatar" />
+          <img src={rafaelImg} alt="Rafael Siqueira Voss" className="agendamento-avatar" />
           <div className="agendamento-card-info">
             <div className="agendamento-card-title">RAFAEL SIQUEIRA VOSS</div>
             <div className="agendamento-card-sub">Psicólogo CRP 05/26598</div>
@@ -50,10 +52,10 @@ export default function Agendamento() {
 
         {/* CARD 2 */}
         <div className="agendamento-card">
-          <div className="agendamento-avatar" />
+          <img src={alessandraImg} alt="Alessandra Marinho Alves" className="agendamento-avatar" />
           <div className="agendamento-card-info">
-            <div className="agendamento-card-title">RAFAEL SIQUEIRA VOSS</div>
-            <div className="agendamento-card-sub">Psicólogo CRP 05/26598</div>
+            <div className="agendamento-card-title">ALESSANDRA MARINHO ALVES</div>
+            <div className="agendamento-card-sub">Psicólogo CRP 05/19478</div>
             <div className="agendamento-card-horario">
               <label htmlFor="horario2">Horários:</label>
               <input id="horario2" type="datetime-local" className="agendamento-datetime" />
